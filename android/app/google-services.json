@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "719595099440",
+    "firebase_url": "https://netfilx-4598e.firebaseio.com",
+    "project_id": "netfilx-4598e",
+    "storage_bucket": "netfilx-4598e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719595099440:android:0076b96fa938bd8fa324f5",
+        "android_client_info": {
+          "package_name": "jbnu.radline000.netflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719595099440-5q23ocgka2jvaq0ru167sles52id09vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDThAg5JbCy-KwiWO-j72ftp3JXSg1-iyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719595099440-5q23ocgka2jvaq0ru167sles52id09vq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
