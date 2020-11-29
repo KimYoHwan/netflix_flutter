@@ -25,7 +25,7 @@ class _CarouselImageState extends State<CarouselImage> {
     // TODO: implement initState
     super.initState();
     movies = widget.movies;
-    images = movies.map((m) => Image.asset('./images/' + m.poster)).toList();
+    images = movies.map((m) => Image.network(m.poster)).toList();
     keywords = movies.map((m) => m.keyWord).toList();
     likes = movies.map((m) => m.like).toList();
     _currentKeyword = keywords[0];
@@ -65,11 +65,21 @@ class _CarouselImageState extends State<CarouselImage> {
                       likes[_currentPage]
                           ? IconButton(
                               icon: Icon(Icons.check),
-                              onPressed: () {},
+                              onPressed: () {
+                                setState(() async {
+                                  likes[_currentPage] = !likes[_currentPage];
+                                  await movies[_currentPage].reference.update({'like':likes[_currentPage]});
+                                });
+                              },
                             )
                           : IconButton(
                               icon: Icon(Icons.add),
-                              onPressed: () {},
+                              onPressed: () {
+                                setState(() async {
+                                   likes[_currentPage] = !likes[_currentPage];
+                                  await movies[_currentPage].reference.update({'like':likes[_currentPage]});
+                                });
+                              },
                             ),
                       Text(
                         '내가 찜한 콘텐츠',
